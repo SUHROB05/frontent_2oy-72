@@ -2,14 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .cantenir {
     width: 1140px;
     margin: 0 auto;
-    /* text-align: center; */
-
+    /* Bu joyda text-align: center; ishlatilmagan, agar markazlashni istasangiz qo'shing */
 }
 
 header {
@@ -20,7 +18,7 @@ header {
 .section__one {
     height: 600px;
     display: flex;
-
+    /* .section__one ichidagi elementlar yonma-yon joylashishini xohlaysiz, lekin .section__one-text va .section__one-img ichida float ishlatish o‘rniga flex asosida qiling */
 }
 
 .section__one-text {
@@ -30,7 +28,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    float: left;
+    float: left; /* Bu joyda float: left ishlatilgan, lekin flex ishlatganingiz uchun floatni olib tashlash mumkin */
 }
 
 .one-text_p1 {
@@ -71,8 +69,7 @@ header {
 .section__one-img {
     width: 584px;
     height: 600px;
-    float: left;
-
+    float: left; /* float: left o'rniga flex asosida joylashtirishni tavsiya qilaman */
 }
 
 .section__one-img img {
@@ -139,39 +136,66 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* .section__three ichidagi elementlar yonma-yon joylashishi uchun flex-direction: column o'rniga flex-direction: row qilish mumkin */
 }
 
-.section__three-img{
+.section__three-img {
     width: 550px;
     height: auto;
-    float: left;
+    float: left; /* float o'rniga flex asosida joylashtirish kerak */
     display: flex;
 }
 
-.section__three-img img{
+.section__three-img img {
     width: 100%;
     height: auto;
 }
-.section__three-text{
+
+.section__three-text {
     width: 590px;
     height: auto;
-    float: left;
+    float: left; /* floatni olib tashlab, flex asosida joylashtirish kerak */
 }
-.section__three-cantener{
+
+.section__three-cantener {
     width: 470px;
     margin: 70px auto 0;
+    /* E'tibor bering: "cantener" noto‘g‘ri yozilgan. To‘g‘ri yozilishi "container" bo‘lishi kerak */
 }
-.section__three-text h6{
+
+.section__three-text h6 {
     color: #dc780b;
     font-size: 15px;
     margin: 10px 0;
 }
-.section__three-text h2{
+
+.section__three-text h2 {
     font-size: 35px;
     line-height: 1.2;
 }
-.section__three-text p{
+
+.section__three-text p {
     font-size: 17px;
     line-height: 1.2;
     margin: 30px 0;
+}
+
+/* Media query - kichik ekranlar uchun moslashuv */
+@media (max-width: 768px) {
+    .cantenir {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .section__one, .section__three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__one-text, .section__one-img, .section__three-text, .section__three-img {
+        width: 100%;
+        float: none; /* float xususiyatini olib tashlash */
+    }
+    .blok {
+        width: 100%;
+        margin-bottom: 20px; /* Har bir blok orasiga masofa qo'shish */
+    }
 }
