@@ -28,12 +28,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    float: left; /* Bu joyda float: left ishlatilgan, lekin flex ishlatganingiz uchun floatni olib tashlash mumkin */
+    float: left;
+    /* Bu joyda float: left ishlatilgan, lekin flex ishlatganingiz uchun floatni olib tashlash mumkin */
 }
 
 .one-text_p1 {
     color: black;
     font-size: 50px;
+    font-weight: bold;
     display: flex;
     width: 100%;
 }
@@ -56,6 +58,8 @@ header {
     border: 2px solid #fcf2e7;
     border-radius: 5px;
     color: #fff;
+    font-size: 20px;
+    font-weight: 700;
     background-color: #dc780b;
     transition: 0.3s;
 }
@@ -69,7 +73,8 @@ header {
 .section__one-img {
     width: 584px;
     height: 600px;
-    float: left; /* float: left o'rniga flex asosida joylashtirishni tavsiya qilaman */
+    float: left;
+    /* float: left o'rniga flex asosida joylashtirishni tavsiya qilaman */
 }
 
 .section__one-img img {
@@ -134,15 +139,15 @@ header {
     height: 500px;
     margin: 50px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    /* .section__three ichidagi elementlar yonma-yon joylashishi uchun flex-direction: column o'rniga flex-direction: row qilish mumkin */
 }
 
 .section__three-img {
     width: 550px;
     height: auto;
-    float: left; /* float o'rniga flex asosida joylashtirish kerak */
+    float: left;
+    /* float o'rniga flex asosida joylashtirish kerak */
     display: flex;
 }
 
@@ -154,7 +159,8 @@ header {
 .section__three-text {
     width: 590px;
     height: auto;
-    float: left; /* floatni olib tashlab, flex asosida joylashtirish kerak */
+    float: left;
+    /* floatni olib tashlab, flex asosida joylashtirish kerak */
 }
 
 .section__three-cantener {
@@ -180,22 +186,261 @@ header {
     margin: 30px 0;
 }
 
+.section__three-btn {
+    height: 45px;
+}
+
+.section__four {
+    height: 1250px;
+    margin: 70px 0;
+    display: flex;
+}
+
+.section__four-text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.section__four-text h6 {
+    color: #dc780b;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.section__four-text h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.section__four-text p {
+    margin: 20px 120px;
+    font-size: 19px;
+}
+
+.section__four-blok {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.four__cart {
+    width: 30%;
+    height: 450px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    border-radius: 100px 10px 5px 5px;
+}
+
+.four__cart-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 100px 0;
+}
+
+.four__cart-img img {
+    width: 100%;
+    display: flex;
+    border-radius: 100px 0;
+}
+
+.section__four-btn {
+    text-align: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.section__four-btn button {
+    width: 158px;
+    height: 45px;
+    border: 2px solid #fcf2e7;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #dc780b;
+    transition: 0.3s;
+}
+
+.section__four-btn button:hover {
+    border: 2px solid #fcf2e7;
+    color: #dc780b;
+    background-color: #fff;
+}
+
+.section__five {
+    width: 100%;
+    height: 520px;
+    margin: 20px 0;
+}
+
+.section__five-text {
+    width: 50%;
+    align-items: center;
+    float: left;
+}
+
+.section__five-text h6 {
+    font-size: 20px;
+    color: #dc780b;
+    gap: 2px;
+}
+
+.section__five-text h2 {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section__five-text p {
+    font-size: 19px;
+}
+
+.section__five-img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.section__five-img img {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.five__btn {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.section__five-btn {
+    width: 163px;
+    height: 48px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.section__five-btn img {
+    display: flex;
+    margin: auto 0;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__five-btn p {
+    display: flex;
+    margin: auto 0;
+    text-align: center;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.section__six {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.section__six-text1 {
+    font-size: 15px;
+    color: #dc780b;
+    text-align: center;
+}
+
+.section__six-text2 {
+    font-size: 40px;
+    margin: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section__six-text3,
+.section__six-text4 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.section__six-star{
+    text-align: center;
+    font-size: 30px;
+    color: #dbc508;
+}
+
+.section__six-text5 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.section__six-text6 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.section__six-img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+.section__six-img img{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media query - kichik ekranlar uchun moslashuv */
 @media (max-width: 768px) {
     .cantenir {
         width: 100%;
         padding: 0 15px;
     }
-    .section__one, .section__three {
+
+    .section__one,
+    .section__three {
         flex-direction: column;
         align-items: center;
     }
-    .section__one-text, .section__one-img, .section__three-text, .section__three-img {
+
+    .section__one-text,
+    .section__one-img,
+    .section__three-text,
+    .section__three-img {
         width: 100%;
-        float: none; /* float xususiyatini olib tashlash */
+        float: none;
+        /* float xususiyatini olib tashlash */
     }
+
     .blok {
         width: 100%;
-        margin-bottom: 20px; /* Har bir blok orasiga masofa qo'shish */
+        margin-bottom: 20px;
+        /* Har bir blok orasiga masofa qo'shish */
     }
 }
