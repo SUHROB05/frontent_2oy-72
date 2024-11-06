@@ -7,18 +7,70 @@
 .cantenir {
     width: 1140px;
     margin: 0 auto;
-    /* Bu joyda text-align: center; ishlatilmagan, agar markazlashni istasangiz qo'shing */
 }
 
 header {
-    height: 50px;
-    background-color: aquamarine;
+    background-color: #fdfdfd;
+    padding: 15px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__ul {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 46px;
+    margin-right:30px ;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    font-size: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dc780b;
+}
+
+.nav-btn button {
+    background-color: #dc780b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn button:hover {
+    background-color: #e0891a;
 }
 
 .section__one {
     height: 600px;
     display: flex;
-    /* .section__one ichidagi elementlar yonma-yon joylashishini xohlaysiz, lekin .section__one-text va .section__one-img ichida float ishlatish o‘rniga flex asosida qiling */
 }
 
 .section__one-text {
@@ -29,7 +81,6 @@ header {
     justify-content: center;
     align-items: center;
     float: left;
-    /* Bu joyda float: left ishlatilgan, lekin flex ishlatganingiz uchun floatni olib tashlash mumkin */
 }
 
 .one-text_p1 {
@@ -74,7 +125,6 @@ header {
     width: 584px;
     height: 600px;
     float: left;
-    /* float: left o'rniga flex asosida joylashtirishni tavsiya qilaman */
 }
 
 .section__one-img img {
@@ -147,11 +197,12 @@ header {
     width: 550px;
     height: auto;
     float: left;
-    /* float o'rniga flex asosida joylashtirish kerak */
     display: flex;
 }
 
 .section__three-img img {
+    width: 550px;
+    height: auto;
     width: 100%;
     height: auto;
 }
@@ -160,13 +211,11 @@ header {
     width: 590px;
     height: auto;
     float: left;
-    /* floatni olib tashlab, flex asosida joylashtirish kerak */
 }
 
 .section__three-cantener {
     width: 470px;
     margin: 70px auto 0;
-    /* E'tibor bering: "cantener" noto‘g‘ri yozilgan. To‘g‘ri yozilishi "container" bo‘lishi kerak */
 }
 
 .section__three-text h6 {
@@ -231,8 +280,9 @@ header {
     height: 450px;
     margin: 15px 0;
     box-sizing: border-box;
-    border: 2px solid #666;
+    border: 0.5px solid #6666664d;
     border-radius: 100px 10px 5px 5px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.463);
 }
 
 .four__cart-img {
@@ -245,6 +295,58 @@ header {
     width: 100%;
     display: flex;
     border-radius: 100px 0;
+}
+
+.four__cart-text {
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+}
+
+.four__cart-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+}
+
+.four__cart-mone {
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    margin-top: -2px; 
+}
+
+.four__cart-desc {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.four__cart-footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four__cart-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #ff7043;
+    color: white;
+    font-size: 20px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.four__cart-star {
+    font-size: 25px;
+    color: #ffb400;
+    margin: 0;
 }
 
 .section__four-btn {
@@ -367,7 +469,8 @@ header {
     font-size: 25px;
     margin: 10px 0;
 }
-.section__six-star{
+
+.section__six-star {
     text-align: center;
     font-size: 30px;
     color: #dbc508;
@@ -385,14 +488,15 @@ header {
     margin: 10px 0;
 }
 
-.section__six-img{
+.section__six-img {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: 100px auto;
 }
-.section__six-img img{
+
+.section__six-img img {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -400,9 +504,107 @@ header {
     border-radius: 50%;
 }
 
+.section__seven {
+    width: 100%;
+    height: 450px;
+    background-color: #fcf2e7;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+.section__seven-init {
+    margin: 0 auto;
+    width: 750px;
+    height: 220px;
+}
 
+.section__seven-text p {
+    font-size: 16px;
+    color: #dc780b;
+    padding: 3px;
+}
 
+.section__seven-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section__seven-input {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section__seven-input input {
+    font-size: 20px;
+    width: 750px;
+    height: 75px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+}
+
+.section__seven-input button {
+    font-size: 20px;
+    height: 75px;
+    width: 150px;
+    background-color: #dc780b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.section__seven-input button:hover {
+    background-color: #fff;
+    color: #dc780b;
+    border-left: 2px solid #dc780b;
+    border-radius: 0;
+    text-shadow: 2px 2px 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 430px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.footer__text-blok {
+    width: 25%;
+    height: auto;
+}
+
+.footer__text-blok h3 {
+    margin: 17px 0;
+}
+
+.footer__text-blok p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer__text-blok div {
+    margin: 27px 0;
+}
 
 
 
@@ -417,30 +619,74 @@ header {
 
 
 /* Media query - kichik ekranlar uchun moslashuv */
-@media (max-width: 768px) {
-    .cantenir {
-        width: 100%;
-        padding: 0 15px;
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .section__one,
-    .section__three {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section__one, .section__three, .section__four {
+        flex-direction: column;
+    }
+    
+    .section__one-text, .section__one-img, 
+    .section__three-img, .section__three-text,
+    .section__five-text, .section__five-img {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__two-blok, .section__four-blok {
         flex-direction: column;
         align-items: center;
     }
 
-    .section__one-text,
-    .section__one-img,
-    .section__three-text,
-    .section__three-img {
+    .nav-btn button {
         width: 100%;
-        float: none;
-        /* float xususiyatini olib tashlash */
+        margin-top: 10px;
     }
 
-    .blok {
+    .section__seven-init {
+        width: 90%;
+    }
+
+    .section__seven-input input {
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__text-blok {
         width: 100%;
         margin-bottom: 20px;
-        /* Har bir blok orasiga masofa qo'shish */
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 400px) {
+    .section__one-text h1 {
+        font-size: 30px;
+    }
+
+    .section__two-text h3,
+    .section__four-text h2 {
+        font-size: 24px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
     }
 }
