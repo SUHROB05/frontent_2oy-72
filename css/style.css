@@ -282,7 +282,13 @@ header {
     box-sizing: border-box;
     border: 0.5px solid #6666664d;
     border-radius: 100px 10px 5px 5px;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.463);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .3s;
+}
+
+.four__cart:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 }
 
 .four__cart-img {
@@ -543,7 +549,7 @@ header {
 .section__seven-input input {
     font-size: 20px;
     width: 750px;
-    height: 75px;
+    height: 65px;
     background-color: #fff;
     border: none;
     outline: none;
@@ -552,7 +558,7 @@ header {
 
 .section__seven-input button {
     font-size: 20px;
-    height: 75px;
+    height: 65px;
     width: 150px;
     background-color: #dc780b;
     color: #fff;
